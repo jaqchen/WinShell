@@ -33,6 +33,7 @@ gen_pathenv() {
 	local outfile="$1"
 	local WPATH='C:\Windows\System32;C:\Windows;C:\Windows\System32\Wbem'
 	find_path 'CMake\bin'
+	find_path 'WinApp\bin'
 	find_path 'mingw32\bin'
 	find_path 'Rust1.68\bin'
 	find_path 'Vim90\bin'
@@ -41,8 +42,6 @@ gen_pathenv() {
 	if [ -n "${outfile}" ] ; then
 		echo "Updating '${outfile}'..."
 		echo "$2${WPATH}" > "${outfile}"
-	else
-		echo "${WPATH}"
 	fi
 }
 
