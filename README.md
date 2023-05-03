@@ -16,7 +16,7 @@ I think there are various ways to related scripts with `.lua` suffixes with the 
 
 ### Script Runner
 
-I have written a simple **Script Runner** to solve above two problems. Its entire source is available in `source/runner.c`.
+I have written a simple **Script Runner** to solve above two problems. Its entire source is available in `sources/runner.c`.
 
 ![script runner](./runner.png)
 
